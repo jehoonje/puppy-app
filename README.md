@@ -39,14 +39,13 @@ b>Doggle</b>은 이러한 문제를 해결하기 위해 <b>다양한 기능을 �
 <div align="center">
 
 ### FRONT
-
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Appliance</th>
       <th>Version</th>
-      <th>선정이유</th>
+      <th>선정 이유</th>
     </tr>
   </thead>
   <tbody>
@@ -54,90 +53,95 @@ b>Doggle</b>은 이러한 문제를 해결하기 위해 <b>다양한 기능을 �
       <td>React</td>
       <td>프론트엔드 라이브러리</td>
       <td>18.3.1</td>
-      <td>컴포넌트 기반 UI 구축</td>
+      <td>컴포넌트 기반 UI 구축을 위해 사용했으며, 가독성과 유지보수성을 고려하여 선택했습니다.</td>
     </tr>
     <tr style="background-color: #f5f5f5;">
       <td>react-router-dom</td>
       <td>클라이언트 라우팅</td>
       <td>6.26.0</td>
-      <td>SPA 내 클라이언트 사이드 라우팅</td>
+      <td>SPA 환경에서 효율적인 페이지 전환과 라우팅 관리를 위해 사용했습니다.</td>
     </tr>
     <tr>
       <td>axios</td>
-      <td>HTTP 클라이언트</td>
-      <td>최신</td>
-      <td>REST API 통신 및 요청 관리</td>
+      <td>API 통신</td>
+      <td>0.27.2</td>
+      <td>비동기 HTTP 요청을 보다 간결하게 처리하고, 브라우저 호환성이 높아 선택했습니다.</td>
     </tr>
     <tr style="background-color: #f5f5f5;">
       <td>Redux</td>
-      <td>상태 관리</td>
+      <td>전역 상태 관리</td>
       <td>5.0.1</td>
-      <td>전역 상태 관리 및 Flux 패턴 적용</td>
+      <td>예측 가능한 데이터 플로우를 유지할 수 있고, 글로벌 상태 관리가 필요한 기능에 활용하기 위해 선택했습니다.</td>
     </tr>
     <tr>
       <td>Redux-actions</td>
-      <td>Redux 액션 헬퍼</td>
-      <td>최신</td>
-      <td>액션 생성 코드 단순화</td>
+      <td>액션 관리</td>
+      <td>2.6.5</td>
+      <td>createAction과 handleActions을 활용하여 Redux 액션을 간결하게 관리하기 위해 사용했습니다.</td>
     </tr>
     <tr style="background-color: #f5f5f5;">
       <td>Redux-thunk</td>
-      <td>Redux 미들웨어</td>
-      <td>최신</td>
-      <td>비동기 액션 처리</td>
+      <td>비동기 상태 관리 미들웨어</td>
+      <td>2.4.1</td>
+      <td>Redux 내에서 비동기 API 호출을 효율적으로 관리하기 위해 적용했습니다.</td>
     </tr>
     <tr>
+      <td>SWR</td>
+      <td>Data Fetching</td>
+      <td>1.3.0</td>
+      <td>Redux 기반 상태 관리 시 코드가 길어지고, 불필요한 GET 요청이 반복되는 문제를 개선하기 위해 SWR을 적용하여 캐싱 및 데이터 자동 갱신을 활용했습니다.</td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
       <td>Styled-components</td>
       <td>CSS-in-JS 스타일링</td>
       <td>6.1.12</td>
-      <td>동적 스타일링 지원</td>
+      <td>CSS를 컴포넌트 단위로 관리하여 유지보수성을 높이고, 동적 스타일링이 용이하여 선택했습니다.</td>
     </tr>
-    <tr style="background-color: #f5f5f5;">
+    <tr>
       <td>Sass</td>
       <td>CSS 전처리기</td>
       <td>1.77.6</td>
-      <td>변수와 중첩을 지원하는 CSS 전처리기</td>
+      <td>CSS의 가독성을 높이고, 변수 및 중첩 스타일링을 활용하여 개발 속도를 높이기 위해 사용했습니다.</td>
     </tr>
-    <tr>
+    <tr style="background-color: #f5f5f5;">
       <td>swiper</td>
       <td>슬라이더 라이브러리</td>
       <td>11.1.9</td>
-      <td>반응형 슬라이더 및 캐러셀 구현</td>
+      <td>다양한 커스텀 옵션을 제공하며, 부드러운 슬라이드 효과를 구현할 수 있어 선택했습니다.</td>
     </tr>
-    <tr style="background-color: #f5f5f5;">
+    <tr>
       <td>framer-motion</td>
       <td>애니메이션 라이브러리</td>
       <td>11.3.21</td>
-      <td>React 기반 애니메이션 효과</td>
+      <td>React 기반으로 간결한 코드로 자연스러운 애니메이션을 구현할 수 있어 사용했습니다.</td>
     </tr>
-    <tr>
+    <tr style="background-color: #f5f5f5;">
       <td>mui/x-date-pickers</td>
       <td>날짜 선택 컴포넌트</td>
       <td>7.11.0</td>
-      <td>고급 날짜/시간 선택 UI</td>
-    </tr>
-    <tr style="background-color: #f5f5f5;">
-      <td>mui/material</td>
-      <td>Material UI 라이브러리</td>
-      <td>최신</td>
-      <td>Material 디자인 시스템</td>
+      <td>캘린더 및 날짜 선택 기능이 필요했으며, Material UI와의 호환성이 좋아 선택했습니다.</td>
     </tr>
     <tr>
+      <td>mui/material</td>
+      <td>UI 라이브러리</td>
+      <td>5.7.0</td>
+      <td>디자인 시스템이 정돈되어 있으며, 다양한 UI 컴포넌트를 제공하여 개발 생산성을 높일 수 있어 사용했습니다.</td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
       <td>AWS EC2</td>
       <td>클라우드 서버 호스팅</td>
       <td>-</td>
-      <td>확장성 높은 인프라 구축</td>
+      <td>확장성과 가용성이 뛰어나며, 직접 서버를 설정하고 최적화할 수 있어 선택했습니다.</td>
     </tr>
-    <tr style="background-color: #f5f5f5;">
+    <tr>
       <td>GitHub Actions</td>
       <td>CI/CD 자동화</td>
       <td>-</td>
-      <td>코드 배포 및 테스트 자동화</td>
+      <td>코드 변경 사항에 대한 테스트 및 배포를 자동화하여 개발 효율성을 높이기 위해 사용했습니다.</td>
     </tr>
   </tbody>
 </table>
 
-</div>
 <br><br><br>
 
 
