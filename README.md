@@ -141,7 +141,7 @@ b>Doggle</b>은 이러한 문제를 해결하기 위해 <b>다양한 기능을 �
     </tr>
   </tbody>
 </table>
-
+</div>
 <br><br><br>
 
 
