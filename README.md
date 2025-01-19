@@ -186,7 +186,9 @@ Doggle은 반려견 주인들이 정보를 공유하고 소통할 수 있는 커
 
 <br><br>
 # 아키텍쳐 (Architecture)
-![doggle_architecture](https://github.com/user-attachments/assets/206e697c-282f-48e1-8ac4-c5ae51020ace)
+![doggle_architecture](https://github.com/user-attachments/assets/206e697c-282f-48e1-8ac4-c5ae51020ace) 
+
+<br><br>
 
 # 트러블 슈팅 (Trouble shooting)
 
@@ -210,3 +212,14 @@ Doggle은 반려견 주인들이 정보를 공유하고 소통할 수 있는 커
 조치: HotelModal, Footer 등을 공통 컴포넌트로 분리, 한 곳에서만 관리하도록 했습니다.<br>
 결과: 중복 코드 20% 감소, 유지보수 시간 50% 단축, 빌드 속도도 소폭 개선되었습니다.<br>
 
+
+<br><br>
+
+## 📽 시연 영상
+
+<div align="center">
+<br>
+  
+[영상 링크](https://youtu.be/Ey6PqKtpbk4?feature=shared) 
+</div>
+<br><br><br><br><br><br>
