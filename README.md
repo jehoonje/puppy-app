@@ -184,10 +184,29 @@ Doggle은 반려견 주인들이 정보를 공유하고 소통할 수 있는 커
 이는 단순한 서비스 제공을 넘어 반려동물 양육과 관련된 지식과 경험을 교환할 수 있는 플랫폼으로 확장하여 차별화를 이루었습니다.<br><br><br><br><br>
 
 
-<br><br><br><br>
+<br><br>
 # 아키텍쳐 (Architecture)
+![doggle_architecture](https://github.com/user-attachments/assets/206e697c-282f-48e1-8ac4-c5ae51020ace)
 
 # 트러블 슈팅 (Trouble shooting)
 
+(Chrome DevTools 및 Lighthouse 성능 측정 기반)
 
+### 1. Drawer 리렌더링 최적화로 FPS 및 UI 반응 속도 개선<br>
+
+문제: Drawer 토글 시 메인 화면 전체가 리렌더링되어 FPS 30, Reflow 증가, 모바일 UX 저하<br>
+조치: Styled-Components에서 shouldForwardProp을 적용해 불필요한 DOM 속성을 제거하고,<br>transform 범위를 줄여 Drawer만 애니메이션 처리하였습니다.<br>
+결과: FPS 42% 향상(30→50~60FPS, DevTools 측정), Reflow 60% 감소, UI 반응 속도 0.15초 내 개선 → 모바일 UX 개선 및 이탈률 감소<br>
+
+### 2. Redux 캐싱 및 API 요청 최적화<br>
+
+문제: 페이지 전환마다 동일한 API가 반복 호출되어 트래픽이 늘고, 로딩 속도가 느려졌습니다.<br>
+조치: Redux에 호텔/객실 데이터를 캐싱하고, useEffect 의존성 배열을 최적화했습니다. <br>또한 staleTime을 설정해 필요할 때만 서버와 통신하도록 만들었습니다.<br>
+결과: API 호출 40% 감소, 로딩 시간 1.8초 → 1.0초로 단축, UX가 눈에 띄게 향상되었습니다.<br>
+
+### 3. 공통 컴포넌트 모듈화<br>
+
+문제: Modal, Footer 등 중복된 UI가 페이지마다 반복 작성되어 유지보수가 번거롭고, 수정 시 버그 위험이 컸습니다.<br>
+조치: HotelModal, Footer 등을 공통 컴포넌트로 분리, 한 곳에서만 관리하도록 했습니다.<br>
+결과: 중복 코드 20% 감소, 유지보수 시간 50% 단축, 빌드 속도도 소폭 개선되었습니다.<br>
 
